@@ -322,5 +322,44 @@ $('.latest-projects').each( function( i, buttonGroup ) {
 --------------------------------------*/ 
 new WOW().init();
 
+/*------------------------------------
+    10. Content Switch
+--------------------------------------*/
+
+var switchTab = function(selectedTabID){
+  $('#tabContainer').children().each(function(i, tab){
+    $(tab).fadeOut(300);
+  });
+
+  $('#' + selectedTabID).fadeIn(300);
+};
+
+var tabSwitcher = $('#tabPanelSwitcher');
+if(tabSwitcher){
+  tabSwitcher.children().each(function(i, item){
+    item.onclick = function(event){
+      event.preventDefault();
+      var $item = $(item);
+      var targetID = $item.attr("tab-target");
+      switchTab(targetID);
+      $(".services-nav-active").removeClass('services-nav-active');
+      $item.addClass('services-nav-active');
+
+      goToByScroll("tabContainer");
+    };
+  });
+
+  switchTab("genel-ozellikleri");
+}
+
+// This is a functions that scrolls to #{blah}link
+function goToByScroll(id) {
+  // Remove "link" from the ID
+  id = id.replace("link", "");
+  // Scroll
+  $('html,body').animate({
+    scrollTop: $("#" + id).offset().top - ($("html, body").scrollTop() < 100 ? 200 : 100)
+  }, 'slow');
+}
 
 });
