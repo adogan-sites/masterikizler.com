@@ -121,17 +121,17 @@
 		margin-top: 20px;
 	}	
 	.slider-content h2{
-		font-size: 30px;
-		font-weight: 100;
+		font-size: 40px;
+		font-weight: 500;
 		color: #fff;
 		line-height: 150%;
 		margin: 0px;
 	}	
 	.slider-content p{
-		font-size: 16px;
-		font-weight: 100;
+		font-size: 22px;
+		font-weight: 400;
 		color: #fff;
-		text-align: justify;
+		text-align: left;
 		line-height: 180%;
 		margin-top: 20px;
 	}		

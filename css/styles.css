@@ -803,7 +803,7 @@ d) Lists
 }
 .primary-list li{
     list-style-type: none;
-    color: #979797;
+    color: #5d5d5d;
     font-size: 14px;
     font-weight: 500;
     margin-top: 10px;  
@@ -838,7 +838,7 @@ e) Color Control
 	position: relative;	
 	margin: 20px 0px 30px 0px;
 }
-.feature-block i{
+.feature-block i, .feature-block img{
 	display: inline-block;
 	color: #ffc527;
 	font-size: 40px;
@@ -2416,7 +2416,3 @@ e) Color Control
     font-weight: 500;
     color: #fff;
 }
-
-
-
-
