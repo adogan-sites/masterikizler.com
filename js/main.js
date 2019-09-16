@@ -362,4 +362,19 @@ function goToByScroll(id) {
   }, 'slow');
 }
 
+// i18n dropdown links
+$(".social-icons .dropdown-menu").each(function(i, li){
+  li.onclick = function(event){
+    var path = window.location.href;
+    var newLang = event.target.getAttribute("lang");
+    if(newLang === "tr"){
+      path = path.replace(/\/(..)\//, "/");
+    } else {
+      path = path.replace(/\/(..)\//, "/" + newLang + "/");
+      path = path.replace(/.com\//, ".com/" + newLang + "/");
+    }
+    window.location = path;
+  }
+});
+
 });
