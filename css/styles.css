@@ -478,7 +478,7 @@ TABLE OF CONTENT
 	padding-left: 6px;
 }
 
-.active-link a{
+.active-link > a{
 	color: #ffc527 !important;
 }
 
@@ -627,11 +627,6 @@ TABLE OF CONTENT
 	float: left;
 	width: 80%;
 }
-
-.service-grid-inner{
-	padding: 0px 15px 15px 0px;
-}
-
 
 /*-----------------------------------------
 6. Latest Projects
