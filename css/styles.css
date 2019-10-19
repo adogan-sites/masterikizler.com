@@ -333,19 +333,35 @@ TABLE OF CONTENT
 	padding-right: 8px;
 }
 
+@media (max-width: 576px) {
+	.social-icons{
+		float: left;
+	}
+}
+
+@media (min-width: 576px) {
+	.social-icons{
+		float: right;
+	}
+}
+
+.social-icons-right-align{
+	float: right;
+	width: 70px;
+}
+
 .social-icons{
 	padding: 0px;
-	float: right;
 	margin: 0px;
 }
 .social-icons li{
-	font-size: 14px;
+	font-size: 20px;
 	list-style-type: none;
 	float: left;
 	width: 50px;
 	text-align: center;
 	margin: 0px;
-	padding: 15px 10px 15px 10px;	
+	padding: 10px 5px 10px 5px;
 }
 .social-icons li a{
 	color: #ffc527;

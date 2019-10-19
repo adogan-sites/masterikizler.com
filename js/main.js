@@ -362,16 +362,28 @@ function goToByScroll(id) {
   }, 'slow');
 }
 
+var pageEnMap = {
+  "iletisim": "contact",
+  "hakkimizda": "about",
+  "urunlerimiz": "products",
+  "genisletilmis-metal-kaba-siva-profili-uretim-hatti": "expanded-metal-rough-plaster-profile-production-line",
+  "delikli-alci-kose-profili-uretim-hatti": "perforated-corner-profile-production-line",
+  "alcipan-profili-uretim-hatti": "gypsum-board-profile-production-line"
+};
+
 // i18n dropdown links
 $(".social-icons .dropdown-menu").each(function(i, li){
   li.onclick = function(event){
     var path = window.location.href;
+    path = path.replace('#', '');
     var newLang = event.target.getAttribute("lang");
+    var page = path.substring(path.lastIndexOf('/')+1, path.length-5);
     if(newLang === "tr"){
-      path = path.replace(/\/(..)\//, "/");
+      path = path.replace(/\/en\//, "/");
+      path = path.replace(page, Object.keys(pageEnMap)[Object.values(pageEnMap).indexOf(page)])
     } else {
-      path = path.replace(/\/(..)\//, "/" + newLang + "/");
-      path = path.replace(/.com\//, ".com/" + newLang + "/");
+      path = path.replace(/.com\//, ".com/en/");
+      path = path.replace(page, Object.values(pageEnMap)[Object.keys(pageEnMap).indexOf(page)])
     }
     window.location = path;
   }
