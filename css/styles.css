@@ -392,8 +392,21 @@ TABLE OF CONTENT
 	padding: 25px 0px 25px 0px;
 }
 
+
+@media (max-width: 375px) {
+	.navbar-logo img{
+		max-width: 240px;
+		margin-top: 6px;
+	}
+}
+
+@media (min-width: 376px) {
+	.navbar-logo img {
+		max-width: 100%;
+	}
+}
+
 .navbar-logo img{
-	max-width: 100%;
 	margin-left: 15px;
 	max-height: 50px;
 }
