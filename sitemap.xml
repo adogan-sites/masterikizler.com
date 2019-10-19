@@ -8,44 +8,84 @@
 
 
 <url>
-  <loc>http://www.masterikizler.com/</loc>
-  <lastmod>2019-09-16T17:46:59+00:00</lastmod>
+  <loc>http://www.masterikizler.com/en/</loc>
+  <lastmod>2019-10-19T21:16:18+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
-  <loc>http://www.masterikizler.com/index.html</loc>
-  <lastmod>2019-09-16T17:46:59+00:00</lastmod>
+  <loc>http://www.masterikizler.com/en/index.html</loc>
+  <lastmod>2019-10-19T21:16:18+00:00</lastmod>
   <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://www.masterikizler.com/en/about.html</loc>
+  <lastmod>2019-10-19T21:16:18+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://www.masterikizler.com/en/gypsum-board-profile-production-line.html</loc>
+  <lastmod>2019-10-19T21:16:18+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://www.masterikizler.com/en/perforated-corner-profile-production-line.html</loc>
+  <lastmod>2019-10-19T21:16:18+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://www.masterikizler.com/en/expanded-metal-rough-plaster-profile-production-line.html</loc>
+  <lastmod>2019-10-19T21:16:18+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://www.masterikizler.com/en/contact.html</loc>
+  <lastmod>2019-10-19T21:16:18+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://www.masterikizler.com/en/products.html</loc>
+  <lastmod>2019-10-19T21:16:18+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://www.masterikizler.com/</loc>
+  <lastmod>2019-10-19T21:16:18+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://www.masterikizler.com/index.html</loc>
+  <lastmod>2019-10-19T21:16:18+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
   <loc>http://www.masterikizler.com/hakkimizda.html</loc>
-  <lastmod>2019-09-16T17:46:59+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>http://www.masterikizler.com/urunlerimiz.html</loc>
-  <lastmod>2019-09-16T17:46:59+00:00</lastmod>
-  <priority>0.80</priority>
+  <lastmod>2019-10-19T21:16:18+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
   <loc>http://www.masterikizler.com/alcipan-profili-uretim-hatti.html</loc>
-  <lastmod>2019-09-16T17:46:59+00:00</lastmod>
-  <priority>0.80</priority>
+  <lastmod>2019-10-19T21:16:18+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
   <loc>http://www.masterikizler.com/delikli-alci-kose-profili-uretim-hatti.html</loc>
-  <lastmod>2019-09-16T17:46:59+00:00</lastmod>
-  <priority>0.80</priority>
+  <lastmod>2019-10-19T21:16:18+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
   <loc>http://www.masterikizler.com/genisletilmis-metal-kaba-siva-profili-uretim-hatti.html</loc>
-  <lastmod>2019-09-16T17:46:59+00:00</lastmod>
-  <priority>0.80</priority>
+  <lastmod>2019-10-19T21:16:18+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
   <loc>http://www.masterikizler.com/iletisim.html</loc>
-  <lastmod>2019-09-16T17:46:59+00:00</lastmod>
-  <priority>0.80</priority>
+  <lastmod>2019-10-19T21:16:18+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.masterikizler.com/urunlerimiz.html</loc>
+  <lastmod>2019-10-19T21:16:18+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 
 

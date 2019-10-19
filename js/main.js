@@ -380,10 +380,16 @@ $(".social-icons .dropdown-menu").each(function(i, li){
     var page = path.substring(path.lastIndexOf('/')+1, path.length-5);
     if(newLang === "tr"){
       path = path.replace(/\/en\//, "/");
-      path = path.replace(page, Object.keys(pageEnMap)[Object.values(pageEnMap).indexOf(page)])
+      var translatedPage = Object.keys(pageEnMap)[Object.values(pageEnMap).indexOf(page)];
+      if(translatedPage){
+        path = path.replace(page, translatedPage);
+      }
     } else {
       path = path.replace(/.com\//, ".com/en/");
-      path = path.replace(page, Object.values(pageEnMap)[Object.keys(pageEnMap).indexOf(page)])
+      var translatedPage = Object.values(pageEnMap)[Object.keys(pageEnMap).indexOf(page)];
+      if(translatedPage){
+        path = path.replace(page, translatedPage);
+      }
     }
     window.location = path;
   }
