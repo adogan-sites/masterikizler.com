@@ -1,7 +1,7 @@
 RewriteEngine On
 RewriteBase /
 RewriteCond %{HTTP_HOST} !^www\.masterikizler\.com
-RewriteRule (.*) https://www.masterikizler.com/$1 [R=301,L]
+RewriteRule (.*) http://www.masterikizler.com/$1 [R=301,L]
 RewriteCond %{THE_REQUEST} /index.html [NC]
 RewriteRule ^(.*/)?index.html$ /$1 [R=301,L]
 
