@@ -333,15 +333,14 @@ TABLE OF CONTENT
 	padding-right: 8px;
 }
 
+.top-bar-info li i.whatsapp, .footer-contact ul li i.whatsapp{
+	color: #25D366;
+	font-weight: bold;
+}
+
 @media (max-width: 576px) {
 	.social-icons{
 		float: left;
-	}
-}
-
-@media (min-width: 576px) {
-	.social-icons{
-		float: right;
 	}
 }
 
