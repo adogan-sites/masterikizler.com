@@ -2460,3 +2460,8 @@ e) Color Control
     font-weight: 500;
     color: #fff;
 }
+
+.vcenter {
+	display: inline-block;
+	float: none;
+}
