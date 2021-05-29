@@ -1,0 +1,23 @@
+.IconContainer {
+  display: none;
+  position: relative;
+  width: 32px;
+  height: 34px;
+  cursor: pointer;
+}
+
+.Icon{
+  position: absolute;
+  transition: opacity 400ms;
+  opacity: 0;
+  
+  &.Open {
+    opacity: 1;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .IconContainer {
+    display: block;
+  }
+}

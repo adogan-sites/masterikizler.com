@@ -1,0 +1,103 @@
+.NavBar {
+  background-color: white;
+  height: 100px;
+  -webkit-box-shadow: 0px 3px 6px 0px rgba(20, 20, 20, 0.05);
+  -moz-box-shadow: 0px 3px 6px 0px rgba(20, 20, 20, 0.05);
+  box-shadow: 0px 3px 6px 0px rgba(20, 20, 20, 0.05);
+
+  position: fixed;
+  z-index: 1000;
+  width: 100%;
+  top: 0;
+  margin-bottom: 100px;
+
+  > div {
+    align-items: center;
+  }
+}
+
+.NavBarLogo {
+  img {
+    width: 229.5px;
+  }
+}
+
+.Menu {
+  height: 100%;
+  a {
+    padding: 16px;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    color: #3b3b3b;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+
+    &:hover {
+      color: #ffc527;
+    }
+  }
+
+  > ul {
+    height: 100%;
+    text-transform: uppercase;
+  }
+
+  ul {
+    display: flex;
+
+    & > li {
+      height: 100%;
+      align-items: center;
+      display: flex;
+    }
+  }
+  .Dropdown {
+    position: relative;
+
+    &:hover ul {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    ul {
+      a {
+        width: 100%;
+      }
+
+      a:hover {
+        background: #f9f9f9;
+        color: #1c303e;
+      }
+
+      background-color: white;
+      text-transform: none;
+      position: absolute;
+      visibility: hidden;
+      opacity: 0;
+      top: 100%;
+      flex-direction: column;
+      white-space: nowrap;
+      -webkit-transition-duration: 0.3s;
+      transition-duration: 0.3s;
+      -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+    }
+
+    & > a {
+      &::after {
+        content: ">";
+        margin-left: 6px;
+        display: inline-block;
+        transform: rotate(90deg) scale(1, 1.5);
+        -webkit-transform: rotate(90deg) scale(1, 1.5);
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .Menu {
+    display: none;
+  }
+}

@@ -1,0 +1,136 @@
+.FooterBlock {
+  background: #1c303e;
+  padding: 55px 0px 40px 0px;
+  color: #fff;
+}
+
+.FooterContent {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 0;
+  padding-right: 36px;
+
+  h3 {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 25px;
+    color: #fff;
+
+    &:after {
+      content: "";
+      display: block;
+      border-bottom: 2px solid #ffc527;
+      width: 90px;
+      padding-top: 10px;
+    }
+  }
+
+  p {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 180%;
+    text-align: justify;
+  }
+
+  ul {
+    display: flex;
+    flex-direction: column;
+
+    li {
+      .Icon {
+        color: #ffc527;
+        margin-right: 16px;
+      }
+
+      list-style-type: none;
+      padding-bottom: 24px;
+
+      a {
+        font-size: 15px;
+        font-weight: 500;
+        color: #fff;
+
+        &:before {
+          content: " +";
+          font-family: FontAwesome;
+          font-size: 17px;
+          color: #ffc527;
+          font-weight: 700;
+          padding-right: 16px;
+        }
+      }
+    }
+  }
+
+  img {
+    width: 216px;
+  }
+}
+
+.FooterContact ul {
+  padding: 0;
+
+  li {
+    list-style-type: none;
+    font-size: 15px;
+    font-weight: 500;
+    padding-top: 15px;
+
+    i {
+      font-size: 18px;
+      color: #ffc527;
+      padding-right: 15px;
+    }
+  }
+}
+
+.FooterBottom {
+  background: #162935;
+  padding: 18px 0;
+
+  .FooterBottomContainer {
+    display: flex;
+    width: 100%;
+
+    h6 {
+      font-size: 14px;
+      font-weight: 500;
+      color: #fff;
+      flex-grow: 1;
+      flex-basis: 0;
+      line-height: 32px;
+    }
+
+    div {
+      flex-grow: 1;
+      flex-basis: 0;
+      text-align: right;
+
+      .Icon {
+        color: #ffc527;
+        font-size: 32px;
+      }
+    }
+  }
+}
+
+
+@media only screen and (max-width: 768px) {
+  .FooterContainer {
+    flex-direction: column;
+  }
+
+  .FooterContent {
+    padding: 0;
+
+    h3 {
+      margin-top: 30px;
+    }
+  }
+
+  .FooterBottomContainer {
+    flex-direction: column-reverse;
+    align-items: center;
+    align-content: center;
+  }
+}

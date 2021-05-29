@@ -1,0 +1,65 @@
+.WhyChooseUs {
+  display: flex;
+  flex-direction: column;
+
+  > div {
+    padding: 15px;
+    display: flex;
+  }
+
+  img {
+    box-shadow: 7px 7px 22px 0px rgba(50, 50, 50, 0.1);
+    border-radius: 10px;
+  }
+
+  .Feature {
+    display: flex;
+    flex: 1;
+    align-items: flex-start;
+
+    .Icon {
+      color: #ffc527;
+      font-size: 40px;
+      border-radius: 15px;
+      border: 2px solid #f1f1f1;
+      padding: 25px;
+      margin: 0 40px 0 34px;
+
+      svg {
+        width: 50px;
+      }
+
+    }
+
+    h4 {
+      font-size: 19px;
+      font-weight: 500;
+      color: #3b3b3b;
+    }
+
+    p {
+      font-size: 14px;
+      margin: 10px 0 10px 0;
+      color: #979797;
+      font-weight: 500;
+      line-height: 20px;
+      text-align: justify;
+    }
+  }
+
+  @media only screen and (max-width: 768px) {
+    > div {
+      padding: 0;
+      flex-direction: column;
+    }
+    
+    .Feature {
+      margin: 8px 0;
+    
+      .Icon {
+        margin: 0 24px 0 0;
+      }
+    }
+  }
+  
+}

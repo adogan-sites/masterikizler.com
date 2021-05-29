@@ -1,0 +1,24 @@
+.Videos {
+  display: flex;
+
+  .Chunk {
+    flex-grow: 3;
+    padding: 0 8px;
+    
+    div {
+      padding: 8px 0;
+    }
+
+    .Vertical {
+      height: 665px;
+    }
+  }
+
+  @media only screen and (max-width: 768px) {
+    flex-wrap: wrap;
+
+    .Chunk .Vertical {
+      height: 280px;
+    }
+  }
+}

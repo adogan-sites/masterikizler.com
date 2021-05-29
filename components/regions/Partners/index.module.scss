@@ -1,0 +1,16 @@
+.Partners {
+  white-space: nowrap;
+  overflow: hidden;
+
+  div {
+    display: inline-block;
+    max-width: 160px;
+    margin-right: 40px;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    
+    img{
+      height: 34px;
+    }
+  }
+}

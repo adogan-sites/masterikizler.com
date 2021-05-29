@@ -1,0 +1,31 @@
+.Section {
+  padding: 90px 0px 90px 0px;
+  background-color: #f7f7f7;
+  border-top: 1px solid #efefef;
+  border-bottom: 1px solid #efefef;
+
+  &.WhiteBackground {
+    background-color: #ffffff;
+  }
+
+  .Container {
+    flex-direction: column;
+  }
+
+  .Explanation {
+    margin-bottom: 70px;
+
+    b {
+      font-weight: 700;
+    }
+
+    p {
+      text-align: center;
+      font-size: 15px;
+      font-weight: 500;
+      color: #979797;
+      line-height: 160%;
+      padding-top: 10px;
+    }
+  }
+}

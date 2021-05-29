@@ -1,0 +1,16 @@
+export const common = {
+  "home": "Home",
+  "about_us": "About us",
+  "products": "Products",
+  "contact": "Contact",
+  "pages": "Pages",
+  "gypsum_line": "Gypsum Board Profile Production Line",
+  "perforated_line": "Perforated Corner Profile Production Line",
+  "expanded_line": "Expanded Metal Rough Plaster Profile Production Line",
+  "references": "References",
+  "references.description": "Some of the customers we serve.",
+  "masterikizler_machine": "Masterİkizler Machine",
+  "footer.about": " Since 1996, metal processing machine, profile production machine and special machines to your request by producing the highest level of satisfaction of our valued customers and we continue to keep.",
+  "footer.address": "1244. Sk., No: 25, Ostim, Ankara, Türkiye",
+  "working_hours": "Weekdays: 9:00-18:00, Saturday: 9:00-15:30",
+};

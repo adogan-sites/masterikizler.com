@@ -1,0 +1,184 @@
+@import-normalize;
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+==============================================
+TABLE OF CONTENT
+==============================================
+
+1. General
+2. Align Holders
+3. Modals
+4. Margins, Paddings
+5. Owl Carousel Dots
+6. Clearfix
+
+==============================================
+[END] TABLE OF CONTENT
+==============================================
+*/
+
+
+
+
+/*-----------------------------------------
+	1. General
+-------------------------------------------*/
+html, body {
+  font-family: 'Raleway', sans-serif;
+  color: #1c303e;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Raleway', sans-serif;
+  color: #1c303e;
+  line-height: 1.3;
+  margin: 0px;
+}
+h1,
+h2,
+h3,
+h4 {
+  font-weight: 700;
+}
+h5,
+h6 {
+  font-weight: 600;
+}
+
+
+
+img{
+  max-width: 100%;
+  height: auto;
+  -webkit-transition-duration: .3s;
+  transition-duration: .3s;
+}
+a{
+  color: #1c303e;
+  -webkit-transition-duration: .3s;
+  transition-duration: .3s;
+  text-decoration: none;
+}
+
+a:active, a:hover, a:focus {
+  outline: 0 none;
+  text-decoration: none;
+}
+button{
+  background: none;
+  outline: 0 none;
+  border: none;
+}
+
+iframe{
+  border: 0px;
+}
+input, textarea{
+  outline: none;
+  max-width: 100%;
+}
+
+
+::-moz-selection {
+  background: #1c303e;
+  color: #fff;
+  text-shadow: none;
+}
+::selection {
+  background: #1c303e;
+  color: #fff;
+  text-shadow: none;
+}
