@@ -5,7 +5,6 @@ import Header from "../Header/header"
 import Footer from "../Footer"
 import StickyWhatsapp from "../../fields/StickyWhatsapp";
 
-
 const Layout = ({ children }) => {
   return (
     <>
@@ -13,6 +12,7 @@ const Layout = ({ children }) => {
       {children}
       <Footer/>
       <StickyWhatsapp />
+      <div id="modal-root" />
     </>
   )
 }

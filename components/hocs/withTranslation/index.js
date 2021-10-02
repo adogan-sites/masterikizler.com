@@ -5,10 +5,10 @@ import {I18n} from "react-polyglot";
 const withTranslation = (WrappedComponent) => {
     const Component = ({translation, ...props}) => {
         const router = useRouter();
-        const {lang} = router.query;
+        const {language} = router.query;
         
         return (
-            <I18n locale={lang || 'tr'} messages={translation}>
+            <I18n locale={language || 'tr'} messages={translation}>
                 <WrappedComponent {...props} />
             </I18n>
         );

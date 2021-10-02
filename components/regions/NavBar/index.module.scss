@@ -1,18 +1,22 @@
 .NavBar {
   background-color: white;
   height: 100px;
-  -webkit-box-shadow: 0px 3px 6px 0px rgba(20, 20, 20, 0.05);
-  -moz-box-shadow: 0px 3px 6px 0px rgba(20, 20, 20, 0.05);
   box-shadow: 0px 3px 6px 0px rgba(20, 20, 20, 0.05);
 
   position: fixed;
   z-index: 1000;
-  width: 100%;
+  width: 100vW;
   top: 0;
   margin-bottom: 100px;
 
   > div {
     align-items: center;
+  }
+
+  @media only screen and (max-width: 768px) {
+    .SwitchLanguage {
+      margin: 0 18px;
+    }
   }
 }
 
@@ -23,7 +27,11 @@
 }
 
 .Menu {
+  @media only screen and (max-width: 768px) {
+    display: none;
+  }
   height: 100%;
+
   a {
     padding: 16px;
     font-size: 12px;
@@ -93,11 +101,73 @@
         -webkit-transform: rotate(90deg) scale(1, 1.5);
       }
     }
+
+    &.open {
+      & > a::after {
+        content: "<";
+      }
+    }
+  }
+
+  &.Mobile {
+    box-shadow: 0px 2px 3px 0px rgba(20, 20, 20, 0.05);
+    position: fixed;
+    height: auto;
+    background: #fff;
+
+    @media only screen and (min-width: 768px) {
+      display: none !important;
+    }
+
+    @media only screen and (max-width: 768px) {
+      display: block;
+    }
+
+    a {
+      width: 100vw;
+    }
+
+    ul {
+      flex-direction: column;
+
+      li {
+        &:last-child {
+          border-bottom: 0;
+        }
+        border-bottom: 1px solid #efefef;
+      }
+    }
+
+    .Dropdown {
+      
+      &.open {
+        ul {
+          visibility: visible !important;
+          opacity: 1;
+          height: 100%;
+        }
+      }
+
+      box-sizing: border-box;
+      flex-direction: column;
+
+      ul {
+        visibility: hidden;
+        transition: opacity height 500ms;
+
+        a {
+          padding-left: 32px;
+        }
+        position: static;
+        opacity: 0;
+        width: 100%;
+        box-shadow: none;
+        height: 0;
+      }
+    }
   }
 }
 
-@media only screen and (max-width: 768px) {
-  .Menu {
-    display: none;
-  }
+.Hide {
+  display: none !important;
 }

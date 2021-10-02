@@ -4,24 +4,26 @@ import {FaTimes} from "@react-icons/all-files/fa/FaTimes";
 
 import styles from "./index.module.scss";
 
-const MenuIcon = ({onToggle}) => {
+const MenuIcon = ({onToggle, isOpen}) => {
     const timesIconRef = useRef();
     const menuIconRef = useRef();
-    let isOpen = false;
     
     const handleClick = () => {
-        if (isOpen) {
-            timesIconRef.current.classList.remove(styles.Open);
-            menuIconRef.current.classList.add(styles.Open);
-            isOpen = false;
-        } else {
-            timesIconRef.current.classList.add(styles.Open);
-            menuIconRef.current.classList.remove(styles.Open);
-            isOpen = true;
-        }
-        onToggle(isOpen);
+        isOpen ? setClosed() : setOpened();
+        onToggle(!isOpen);
+    };
+
+    const setOpened = () => {
+        timesIconRef?.current?.classList.remove(styles.Open);
+        menuIconRef?.current?.classList.add(styles.Open);
     };
     
+    const setClosed = () => {
+        timesIconRef?.current?.classList.add(styles.Open);
+        menuIconRef?.current?.classList.remove(styles.Open);
+    };
+
+    isOpen ? setClosed() : setOpened();
     
     return (
         <div onClick={handleClick} className={styles.IconContainer}>

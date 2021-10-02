@@ -1,5 +1,55 @@
 {
   "languages": [
     "tr", "en"
+  ],
+  "defaultLanguage": "tr",
+  "pages": [
+    {
+      "name": "about",
+      "slugs": {
+        "tr": "hakkimizda",
+        "en": "about"
+      }
+    },
+    {
+      "name": "products",
+      "slugs": {
+        "tr": "urunler",
+        "en": "products"
+      },
+      "subPages": [
+        {
+          "name": "gypsum-board-profile-production-line",
+          "slugs": {
+            "tr": "alcipan-profili-uretim-hatti",
+            "en": "gypsum-board-profile-production-line"
+          }
+        },
+        {
+          "name": "perforated-corner-profile-production-line",
+          "slugs": {
+            "tr": "delikli-alci-kose-profili-uretim-hatti",
+            "en": "perforated-corner-profile-production-line"
+          }
+        },
+        {
+          "name": "expanded-metal-rough-plaster-profile-production-line",
+          "slugs": {
+            "tr": "genisletilmis-metal-kaba-siva-profili-uretim-hatti",
+            "en": "expanded-metal-rough-plaster-profile-production-line"
+          }
+        }
+      ]
+    },
+    {
+      "name": "contact",
+      "slugs": {
+        "tr": "iletisim",
+        "en": "contact"
+      }
+    },
+    {
+      "name": "masterikizler"
+    }
   ]
 }
