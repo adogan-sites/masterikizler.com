@@ -9,7 +9,8 @@
       "slugs": {
         "tr": "hakkimizda",
         "en": "about"
-      }
+      },
+      "component": "About"
     },
     {
       "name": "products",
@@ -17,6 +18,8 @@
         "tr": "urunler",
         "en": "products"
       },
+      "component": "Products",
+      "subPageComponent": "Product",
       "subPages": [
         {
           "name": "gypsum-board-profile-production-line",
@@ -46,7 +49,8 @@
       "slugs": {
         "tr": "iletisim",
         "en": "contact"
-      }
+      },
+      "component": "Contact"
     },
     {
       "name": "masterikizler"

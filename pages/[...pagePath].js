@@ -2,11 +2,13 @@ import React from "react";
 
 import { getAllSlugPaths, getAllUnslugPaths } from "../utils/pageUtils";
 
+import withAppHocs from '../components/hocs/withAppHocs/index';
+
 const Page = ({ pagePath }) => {
   return <>{pagePath}</>;
 };
 
-export default Page;
+export default withAppHocs(Page);
 
 export const getStaticProps = async ({ params }) => {
   const pagePath = params.pagePath;

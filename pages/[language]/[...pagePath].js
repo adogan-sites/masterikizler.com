@@ -8,11 +8,14 @@ import { getAllUnslugPaths } from "../../utils/pageUtils";
 
 import { getStaticProps as getStaticProps_ } from "../index";
 
+import withAppHocs from '../../components/hocs/withAppHocs/index';
+
 const Page = ({ pagePath, ...props }) => {
-  return pagePath === "index" ? <Home {...props} /> : null;
+  console.log(JSON.stringify(pagePath, null, 2));
+  return pagePath[0] === "index" ? <Home {...props} /> : pagePath;
 };
 
-export default Page;
+export default withAppHocs(Page);
 
 export const getStaticProps = getStaticProps_;
 

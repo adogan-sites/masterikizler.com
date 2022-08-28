@@ -15,7 +15,7 @@ const seekAndCollectSlugs = (pageList, language, parentPath = []) => {
   return list;
 };
 
-const seekAndCollectUnslugs = (pageList, language, parentPath = []) => {
+const seekAndCollectUnslugs = (pageList, parentPath = []) => {
     let list = [];
     pageList
       .filter((p) => !p.slugs)
@@ -24,7 +24,7 @@ const seekAndCollectUnslugs = (pageList, language, parentPath = []) => {
         list.push(path);
         if (subPages) {
           list.push([...path, "index"]);
-          list = [...list, ...seekAndCollectUnslugs(subPages, language, path)];
+          list = [...list, ...seekAndCollectUnslugs(subPages, path)];
         }
       });
     return list;
@@ -37,9 +37,4 @@ export const getAllSlugPaths = () => {
     .flatMap((a) => a);
 };
 
-export const getAllUnslugPaths = () => {
-    const { languages } = config;
-    return languages
-      .map((language) => seekAndCollectUnslugs(config.pages, language))
-      .flatMap((a) => a);
-  };
+export const getAllUnslugPaths = () => seekAndCollectUnslugs(config.pages);
