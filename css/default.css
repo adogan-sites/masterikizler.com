@@ -84,16 +84,6 @@ input, textarea{
 }
 
 
-::-moz-selection {
-    background: #1c303e;
-    color: #fff;
-    text-shadow: none;
-}
-::selection {
-    background: #1c303e;
-    color: #fff;
-    text-shadow: none;
-}
 
 
 
@@ -308,6 +298,34 @@ input, textarea{
 
 
 
+.pulse {
+  border-radius: 12px;
+  border: 2px solid #ffc527;
+  animation: pulse 2s infinite;
+}
 
-
-
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 rgba(255, 197, 39, 0.7);
+  }
+  70% {
+    -webkit-box-shadow: 0 0 0 16px rgba(255, 197, 39, 0);
+  }
+  100% {
+    -webkit-box-shadow: 0 0 0 0 rgba(255, 197, 39, 0);
+  }
+}
+@keyframes pulse {
+  0% {
+    -moz-box-shadow: 0 0 0 0 rgba(255, 197, 39, 0.7);
+    box-shadow: 0 0 0 0 rgba(255, 197, 39, 0.7);
+  }
+  70% {
+    -moz-box-shadow: 0 0 0 16px rgba(255, 197, 39, 0);
+    box-shadow: 0 0 0 16px rgba(255, 197, 39, 0);
+  }
+  100% {
+    -moz-box-shadow: 0 0 0 0 rgba(255, 197, 39, 0);
+    box-shadow: 0 0 0 0 rgba(255, 197, 39, 0);
+  }
+}
