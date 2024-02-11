@@ -7,6 +7,8 @@ module.exports = (phase, conf) => {
     };
 
     newConfig.images.disableStaticImages = true;
+    newConfig.swcMinify = true;
+    newConfig.output = 'export';
 
     return newConfig;
 };

@@ -6,30 +6,31 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "watch-export": "watch 'next build && next export' components configs pages styles public",
+    "watch-export": "watch 'next build' components configs pages styles public",
     "serve": "http-server ./out"
   },
   "dependencies": {
     "@react-icons/all-files": "4.1.0",
+    "eslint-config-next": "^14.1.0",
     "imagemin-mozjpeg": "9.0.0",
-    "next": "11.1.0",
+    "next": "14.1.0",
     "next-compose-plugins": "2.2.1",
     "next-optimized-images": "2.6.2",
-    "node-polyglot": "2.4.0",
-    "prop-types": "15.7.2",
-    "ramda": "^0.27.1",
-    "react": "17.0.2",
-    "react-dom": "17.0.2",
-    "react-fast-marquee": "1.2.1",
+    "node-polyglot": "2.5.0",
+    "prop-types": "15.8.1",
+    "ramda": "^0.29.1",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-fast-marquee": "1.6.4",
     "react-polyglot": "0.7.2",
-    "sass": "1.38.0"
+    "sass": "1.70.0"
   },
   "engines": {
-    "node": "14"
+    "node": "20"
   },
   "devDependencies": {
-    "eslint-plugin-react": "^7.24.0",
-    "http-server": "13.0.1",
+    "eslint-plugin-react": "^7.33.2",
+    "http-server": "14.1.1",
     "watch": "1.0.2"
   }
 }
